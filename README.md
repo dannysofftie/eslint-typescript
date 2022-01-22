@@ -1,4 +1,4 @@
-# Pre-setup esliint & Typescript config
+# Ready to use ESLint & Typescript config
 
 A base tsconfig for typescript projects, this module includes configs for:
 
