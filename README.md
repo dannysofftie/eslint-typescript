@@ -21,7 +21,7 @@ Add this to your package.json
 // devDependencies
 "devDependencies":{
     ...
-    "@oratech/eslint-typescript":"https://github.com:dannysofftie/eslint-typescript.git",
+    "@oratech/eslint-typescript":"https://github.com/dannysofftie/eslint-typescript.git",
     "eslint": "^8.7.0",
     "prettier": "^2.5.1",
     "jest": "^27.4.7",

@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "@jest/globals": "^27.4.6",
-    "@swc/core": "^1.2.133",
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
@@ -49,6 +48,5 @@
     "tsconfig-paths": "^3.12.0",
     "tsconfig-paths-jest": "^0.0.1",
     "typescript": "^4.4.0"
-  },
-  "devDependencies": {}
+  }
 }
