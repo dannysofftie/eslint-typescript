@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "target": "ES2020",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": true,
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useUnknownInCatchVariables": false,
+    "allowJs": true,
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types", "node_modules", "./types", "./test"],
+    "types": ["node", "jest", "@types/jest"]
+  },
+  "exclude": ["dist", "node_modules", "**/node_modules/*", "**/test/*"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "pretty": true,
+    "files": true,
+    "transpileOnly": true,
+    "transpiler": "ts-node/transpilers/swc-experimental"
+  }
+}
