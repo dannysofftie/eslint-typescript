@@ -35,6 +35,15 @@ module.exports = {
         "import/no-extraneous-dependencies": ["error", { devDependencies: ["./cypress/**/*"] }],
       },
     },
+    {
+      files: ["*_tests*_/**/*"],
+      rules: {
+        "no-unused-expressions": 0,
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-unused-expressions": "off",
+        "import/no-extraneous-dependencies": ["error", { devDependencies: ["*_tests*_/**/*"] }],
+      },
+    },
   ],
   ignorePatterns: ["**/dist/**/*.*", "**/generated/**/*.*", ".eslintrc.js"],
   rules: {
@@ -56,6 +65,8 @@ module.exports = {
       "error",
       {
         argsIgnorePattern: "^_",
+        ignoreRestSiblings: true,
+        varsIgnorePattern: "^_"
       },
     ],
     "simple-import-sort/imports": [
@@ -87,7 +98,7 @@ module.exports = {
       "warn",
       {
         selector: "variable",
-        format: ["camelCase", "UPPER_CASE"],
+        format: ["UPPER_CASE", "strictCamelCase"],
         leadingUnderscore: "allow",
       },
       {
@@ -108,7 +119,8 @@ module.exports = {
       {
         selector: "objectLiteralProperty",
         format: ["PascalCase", "camelCase", "UPPER_CASE"],
-      },
+        leadingUnderscore: 'allowSingleOrDouble',
+        },
       {
         selector: "enumMember",
         format: ["PascalCase"],
